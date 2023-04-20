@@ -13,6 +13,46 @@
     <link rel="stylesheet" href="assets/css/Contact-Details-icons.css">
     <link rel="stylesheet" href="assets/css/Request-review-form-1-5-stars-BS5.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
+<!-- Cookie Banner -->
+<div class="alert alert-dismissible text-center cookiealert" role="alert">
+  <div class="cookiealert-container">
+    Wir verwenden Cookies, um Ihnen das beste Nutzererlebnis bieten zu können. Wenn Sie fortfahren, diese Seite zu verwenden, nehmen wir an, dass Sie damit einverstanden sind. <a href="https://cc-pliska.de/datenschutz.html" target="_blank">Weitere Informationen</a>
+    <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
+      Ich bin einverstanden
+    </button>
+  </div>
+</div>
+
+<!-- Optional JavaScript -->
+<script>
+  // Cookie Banner
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#343a40",
+          "text": "#ffffff"
+        },
+        "button": {
+          "background": "#f0ad4e",
+          "text": "#ffffff"
+        }
+      },
+      "theme": "edgeless",
+      "position": "bottom",
+      "type": "opt-in",
+      "content": {
+        "message": "Wir verwenden Cookies, um Ihnen das beste Nutzererlebnis bieten zu können. Wenn Sie fortfahren, diese Seite zu verwenden, nehmen wir an, dass Sie damit einverstanden sind.",
+        "href": "https://cc-pliska.de/datenschutz.html",
+        "link": "Weitere Informationen",
+        "dismiss": "Ich bin einverstanden"
+      },
+      "cookie": {
+        "expiryDays": 365
+      }
+    })
+  });
+</script>
 </head>
 
 <body>
